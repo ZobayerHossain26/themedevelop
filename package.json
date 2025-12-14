@@ -1,0 +1,19 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"shopify theme dev\" \"tailwindcss -i ./assets/input.css -o ./assets/output.css --minify --watch\"",
+     "build": "tailwindcss -i ./assets/input.css -o ./assets/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "concurrently": "^9.2.1",
+    "tailwindcss": "^4.1.18"
+  }
+}
